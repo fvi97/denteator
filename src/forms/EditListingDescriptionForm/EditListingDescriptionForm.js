@@ -99,6 +99,16 @@ const EditListingDescriptionFormComponent = props => (
             autoFocus
           />
 
+          <FieldTextInput
+            id="description"
+            name="description"
+            className={css.description}
+            type="textarea"
+            label={descriptionMessage}
+            placeholder={descriptionPlaceholderMessage}
+            validate={composeValidators(required(descriptionRequiredMessage))}
+          />
+
           <Button
             className={css.submitButton}
             type="submit"
