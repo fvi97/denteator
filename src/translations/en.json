@@ -197,7 +197,7 @@
   "EditListingPoliciesPanel.title": "Edit the rules of {listingTitle}",
   "EditListingPricingForm.priceInputPlaceholder": "Choose your price…",
   "EditListingPricingForm.pricePerDay": "Price per day in euros",
-  "EditListingPricingForm.pricePerNight": "Price per night in euros",
+  "EditListingPricingForm.pricePerNight": "Average price for a consultation",
   "EditListingPricingForm.pricePerUnit": "Price per unit in euros",
   "EditListingPricingForm.priceRequired": "You need to add a valid price.",
   "EditListingPricingForm.priceTooLow": "Price should be at least {minPrice}.",

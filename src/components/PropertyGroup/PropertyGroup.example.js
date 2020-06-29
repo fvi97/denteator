@@ -2,36 +2,20 @@ import PropertyGroup from './PropertyGroup';
 
 const exampleOptions = [
   {
-    key: 'towels',
-    label: 'Towels',
+    key: 'dental_implant',
+    label: 'Dental implant',
   },
   {
-    key: 'bathroom',
-    label: 'Bathroom',
+    key: 'cosmetic_dentistry',
+    label: 'Cosmetic dentistry',
   },
   {
-    key: 'swimming_pool',
-    label: 'Swimming pool',
+    key: 'ortodontics',
+    label: 'Ortodontics / Braces',
   },
   {
-    key: 'own_drinks',
-    label: 'Own drinks allowed',
-  },
-  {
-    key: 'jacuzzi',
-    label: 'Jacuzzi',
-  },
-  {
-    key: 'audiovisual_entertainment',
-    label: 'Audiovisual entertainment',
-  },
-  {
-    key: 'barbeque',
-    label: 'Barbeque',
-  },
-  {
-    key: 'own_food_allowed',
-    label: 'Own food allowed',
+    key: 'radiology',
+    label: 'Radiology',
   },
 ];
 
