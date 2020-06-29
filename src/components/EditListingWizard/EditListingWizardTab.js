@@ -13,6 +13,7 @@ import {
   EditListingAvailabilityPanel,
   EditListingDescriptionPanel,
   EditListingFeaturesPanel,
+  EditListingPoliciesPanel,
   EditListingLocationPanel,
   EditListingPhotosPanel,
   EditListingPricingPanel,
