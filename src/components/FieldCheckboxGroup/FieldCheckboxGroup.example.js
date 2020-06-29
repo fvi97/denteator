@@ -8,7 +8,7 @@ import { requiredFieldArrayCheckbox } from '../../util/validators';
 const formName = 'Styleguide.FieldCheckboxGroup';
 const formNameRequired = 'Styleguide.FieldCheckboxGroupRequired';
 
-const label = <h3>Amenities</h3>;
+const label = <h3>Services</h3>;
 
 const commonProps = {
   label: label,
@@ -24,27 +24,7 @@ const commonProps = {
     {
       key: 'swimming_pool',
       label: 'Swimming pool',
-    },
-    {
-      key: 'own_drinks',
-      label: 'Own drinks allowed',
-    },
-    {
-      key: 'jacuzzi',
-      label: 'Jacuzzi',
-    },
-    {
-      key: 'audiovisual_entertainment',
-      label: 'Audiovisual entertainment',
-    },
-    {
-      key: 'barbeque',
-      label: 'Barbeque',
-    },
-    {
-      key: 'own_food_allowed',
-      label: 'Own food allowed',
-    },
+    }
   ],
   twoColumns: true,
 };
