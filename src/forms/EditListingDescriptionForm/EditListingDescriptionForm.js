@@ -99,23 +99,6 @@ const EditListingDescriptionFormComponent = props => (
             autoFocus
           />
 
-          <FieldTextInput
-            id="description"
-            name="description"
-            className={css.description}
-            type="textarea"
-            label={descriptionMessage}
-            placeholder={descriptionPlaceholderMessage}
-            validate={composeValidators(required(descriptionRequiredMessage))}
-          />
-
-          <CustomCategorySelectFieldMaybe
-            id="category"
-            name="category"
-            categories={categories}
-            intl={intl}
-          />
-
           <Button
             className={css.submitButton}
             type="submit"
