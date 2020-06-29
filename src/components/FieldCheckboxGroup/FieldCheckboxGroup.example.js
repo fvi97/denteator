@@ -14,16 +14,20 @@ const commonProps = {
   label: label,
   options: [
     {
-      key: 'towels',
-      label: 'Towels',
+      key: 'dental_implant',
+      label: 'Dental implant',
     },
     {
-      key: 'bathroom',
-      label: 'Bathroom',
+      key: 'cosmetic_dentistry',
+      label: 'Cosmetic dentistry',
     },
     {
-      key: 'swimming_pool',
-      label: 'Swimming pool',
+      key: 'ortodontics',
+      label: 'Ortodontics / Braces',
+    },
+    {
+      key: 'radiology',
+      label: 'Radiology',
     }
   ],
   twoColumns: true,

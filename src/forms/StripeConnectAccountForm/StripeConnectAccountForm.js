@@ -333,11 +333,6 @@ const StripeConnectAccountFormComponent = props => {
               </div>
             )}
 
-            <ErrorsMaybe
-              stripeAccountError={stripeAccountError}
-              stripeAccountLinkError={stripeAccountLinkError}
-            />
-
             {children}
 
             {submitButtonMaybe}
