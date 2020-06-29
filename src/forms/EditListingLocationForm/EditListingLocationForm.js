@@ -93,10 +93,6 @@ export const EditListingLocationFormComponent = props => (
             useDefaultPredictions={false}
             format={identity}
             valueFromForm={values.location}
-            validate={composeValidators(
-              autocompleteSearchRequired(addressRequiredMessage),
-              autocompletePlaceSelected(addressNotRecognizedMessage)
-            )}
           />
 
           <FieldTextInput
