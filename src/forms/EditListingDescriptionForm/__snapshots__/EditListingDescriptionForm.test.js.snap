@@ -29,6 +29,27 @@ exports[`EditListingDescriptionForm matches snapshot 1`] = `
       value=""
     />
   </div>
+  <div
+    className=""
+  >
+    <label
+      htmlFor="description"
+    >
+      EditListingDescriptionForm.description
+    </label>
+    <textarea
+      className="undefined"
+      id="description"
+      maxLength={5000}
+      name="description"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="EditListingDescriptionForm.descriptionPlaceholder"
+      rows={1}
+      value=""
+    />
+  </div>
   <button
     className=""
     disabled={true}
