@@ -128,3 +128,8 @@
     top: calc(-1 * var(--LandingPage_sectionMarginTopLarge));
   }
 }
+
+.main_lp_content {
+  margin-top: 1500px;
+  margin-bottom: 1650px;
+}

@@ -23,6 +23,9 @@ import facebookImage from '../../assets/dental-clinic-background.jpg';
 import twitterImage from '../../assets/dental-clinic-background.jpg';
 import css from './LandingPage.css';
 
+import 'survey-react/survey.css';
+import * as Survey from 'survey-react';
+
 export const LandingPageComponent = props => {
   const { history, intl, location, scrollingDisabled } = props;
 
@@ -57,7 +60,7 @@ export const LandingPageComponent = props => {
         <LayoutWrapperTopbar>
           <TopbarContainer />
         </LayoutWrapperTopbar>
-        <LayoutWrapperMain>
+        <LayoutWrapperMain className={css.main_lp_content}>
           <div className={css.heroContainer}>
             <SectionHero className={css.hero} history={history} location={location} />
           </div>
