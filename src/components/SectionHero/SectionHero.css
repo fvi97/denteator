@@ -355,7 +355,7 @@ div.et_pb_section.et_pb_section_1 {
 
 div.et_pb_section.et_pb_section_0 {
   background-position: center right;
-  background-image: radial-gradient(circle at right,rgba(255,255,255,0) 0%,#f9fafc 100%),url(https://denteator.com/wp-content/uploads/2020/01/dentist-03.jpg)!important;
+  background-image: radial-gradient(circle at right,rgba(255,255,255,0) 0%,#f9fafc 100%),url('../../assets/dentist-03.jpg')!important;
 }
 
 .et_pb_row_0 {
