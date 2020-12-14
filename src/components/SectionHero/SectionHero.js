@@ -4,7 +4,28 @@ import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { NamedLink } from '../../components';
 
+import {
+  useInputs,
+  Captions,
+  FormBody,
+  ComboboxMulti,
+  RadioControl,
+  RadioOption,
+  Input, withFormContextAndTheme,
+} from 'react-emotion-multi-step-form';
 import css from './SectionHero.css';
+// import MultiStep from 'react-multistep/react-multistep';
+// import StepOne from './stepOne';
+// import StepTwo from './stepTwo';
+
+import turismoDentalMain from '../../assets/Turismo-dental-bucharest.jpg';
+import dentist01 from '../../assets/dentist-01.png';
+import services1 from '../../assets/services-icon-1.png';
+import services2 from '../../assets/services-icon-2.png';
+import services3 from '../../assets/services-icon-3.png';
+import services4 from '../../assets/services-icon-4.png';
+import services5 from '../../assets/services-icon-5.png';
+import services6 from '../../assets/services-icon-6.png';
 
 const SectionHero = props => {
   const { rootClassName, className } = props;
@@ -53,6 +74,22 @@ const SectionHero = props => {
   const services_list_header = classNames(css.et_pb_module, css.et_pb_text, css.et_pb_text_9, css.et_pb_bg_layout_light, css.et_pb_text_align_left);
   const services_list_text = classNames(css.et_pb_module, css.et_pb_text, css.et_pb_text_10, css.et_pb_bg_layout_light, css.et_pb_text_align_left);
 
+  // const steps = [
+  //   {name: 'StepOne', component: <StepOne/>},
+  //   {name: 'StepTwo', component: <StepTwo/>}
+  // ];
+
+  const handleSubmit = data => {
+    console.log(data);
+    // const history = useHistory();
+    //
+    // function handleClick() {
+    //   history.push("/home");
+    // }
+
+  };
+
+  // const options = ['Arts & Entertainment', 'Industry', 'Innovation & Tech', 'Life'];
   return (
     <div className={classes}>
       {/*<div className={css.heroContent}>*/}
@@ -101,11 +138,45 @@ const SectionHero = props => {
             </div>
             <div className={welcome_image_container}>
               <span className={css.et_pb_image_wrap}><img className={css.welcome_image}
-                src="https://denteator.com/wp-content/uploads/2020/01/dentist-01.png"
-                srcSet="https://denteator.com/wp-content/uploads/2020/01/dentist-01.png 800w, https://denteator.com/wp-content/uploads/2020/01/dentist-01-480x240.png 480w"
+                src={dentist01}
                 sizes="((min-width: 0px) and (max-width: 480px)) 480px, (min-width: 481px) 800px, 100vw"/></span>
             </div>
           </div>
+          {/*<div className={css.landing_page_form}>*/}
+          {/*  <h1>*/}
+          {/*    Questionnaire*/}
+          {/*  </h1>*/}
+          {/*  <Captions callToActionText="Get Browsing!" />*/}
+          {/*  <FormBody height={200} initialFocus={false} submitText="Browse Clinics" submitWidth={250} onSubmit={handleSubmit}>*/}
+          {/*    <RadioControl height={200}*/}
+          {/*      name="location"*/}
+          {/*      caption="Where does it hurt you?"*/}
+          {/*      validationRules={{ required: 'Please select an option' }}*/}
+          {/*    >*/}
+          {/*      <RadioOption className={css.test} value="Left Side" />*/}
+          {/*      <RadioOption value="Front of Teeth" />*/}
+          {/*      <RadioOption value="Right Side" />*/}
+          {/*    </RadioControl>*/}
+          {/*    <RadioControl height={200}*/}
+          {/*      name="intensity"*/}
+          {/*      caption="How bad does it hurt?"*/}
+          {/*      validationRules={{ required: 'Please select an option' }}*/}
+          {/*    >*/}
+          {/*      <RadioOption value="Barely Feel It" />*/}
+          {/*      <RadioOption value="Medium" />*/}
+          {/*      <RadioOption value="Bad" />*/}
+          {/*    </RadioControl>*/}
+          {/*    <RadioControl height={200}*/}
+          {/*      name="past appointments"*/}
+          {/*      caption="How long has it been since your last dentist appointment?"*/}
+          {/*      validationRules={{ required: 'Please select a frequency' }}*/}
+          {/*    >*/}
+          {/*      <RadioOption value="<6 months" />*/}
+          {/*      <RadioOption value="6-12 months" />*/}
+          {/*      <RadioOption value=">12 months" />*/}
+          {/*    </RadioControl>*/}
+          {/*  </FormBody>*/}
+          {/*</div>*/}
           <div className={welcome_empty}>
           </div>
         </div>
@@ -172,8 +243,7 @@ const SectionHero = props => {
             <div className={image_container}>
               <span className={css.et_pb_image_wrap}><div className={css.box_shadow_overlay}></div>
                 <img
-                src="https://denteator.com/wp-content/uploads/2020/01/Turismo-dental-bucharest.jpg"
-                srcSet="https://denteator.com/wp-content/uploads/2020/01/Turismo-dental-bucharest.jpg 1325w, https://denteator.com/wp-content/uploads/2020/01/Turismo-dental-bucharest-1280x1610.jpg 1280w, https://denteator.com/wp-content/uploads/2020/01/Turismo-dental-bucharest-980x1233.jpg 980w, https://denteator.com/wp-content/uploads/2020/01/Turismo-dental-bucharest-480x604.jpg 480w"
+                src={turismoDentalMain}
                 sizes="((min-width: 0px) and (max-width: 480px)) 480px, ((min-width: 481px) and (max-width: 980px)) 980px, ((min-width: 981px) and (max-width: 1280px)) 1280px, (min-width: 1281px) 1325px, 100vw"/></span>
             </div>
           </div>
@@ -276,7 +346,7 @@ const SectionHero = props => {
             <div className={service_submodule_first}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-6.png"
+                  src={services6}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -291,7 +361,7 @@ const SectionHero = props => {
             <div className={service_submodule_rest}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-4.png"
+                  src={services4}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -306,7 +376,7 @@ const SectionHero = props => {
             <div className={service_submodule_rest}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-1.png"
+                  src={services1}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -321,7 +391,7 @@ const SectionHero = props => {
             <div className={service_submodule_rest}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-3.png"
+                  src={services3}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -336,7 +406,7 @@ const SectionHero = props => {
             <div className={service_submodule_rest}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-5.png"
+                  src={services5}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -351,7 +421,7 @@ const SectionHero = props => {
             <div className={service_submodule_rest}>
               <div className={css.et_pb_blurb_content}>
                 <div className={css.et_pb_main_blurb_image}><span className={css.et_pb_image_wrap}><img
-                  src="https://denteator.com/wp-content/uploads/2020/01/dentist-icon-white-2.png"
+                  src={services2}
                   sizes="(max-width: 56px) 100vw, 56px"
                   className={css.et_pb_animation_top}/></span></div>
                 <div className={css.et_pb_blurb_container}>
@@ -406,4 +476,4 @@ SectionHero.propTypes = {
   className: string,
 };
 
-export default SectionHero;
+export default withFormContextAndTheme(SectionHero);
