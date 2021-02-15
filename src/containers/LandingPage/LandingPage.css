@@ -133,3 +133,10 @@
   margin-top: 1500px;
   margin-bottom: 1650px;
 }
+
+@media only screen and (max-width: 676px) {
+  .main_lp_content {
+    margin-top: 4000px;
+    margin-bottom: 0px;
+  }
+}

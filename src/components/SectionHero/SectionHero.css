@@ -278,6 +278,7 @@ div.et_pb_section.et_pb_section_1 {
   height: 760px;
   min-height: 712px;
   max-height: 199px;
+  max-width: 100%;
 }
 
 .et_pb_column_6 {
@@ -539,6 +540,12 @@ div.et_pb_section.et_pb_section_3 {
   border-radius: 0 0 0 20vw;
   z-index: 10;
   box-shadow: 0px 40px 60px 0px rgba(0,64,135,0.06);
+}
+
+@media only screen and (max-width: 676px) {
+  .et_pb_section_4 {
+    display: none;
+  }
 }
 .et_pb_section_4.et_pb_section {
   padding-top: 0px;

@@ -3,6 +3,8 @@ import { string } from 'prop-types';
 import { FormattedMessage } from '../../util/reactIntl';
 import classNames from 'classnames';
 import { NamedLink } from '../../components';
+import { Link } from "react-router-dom";
+
 
 import {
   useInputs,
@@ -26,6 +28,7 @@ import services3 from '../../assets/services-icon-3.png';
 import services4 from '../../assets/services-icon-4.png';
 import services5 from '../../assets/services-icon-5.png';
 import services6 from '../../assets/services-icon-6.png';
+import Redirect from 'react-router-dom/es/Redirect';
 
 const SectionHero = props => {
   const { rootClassName, className } = props;
@@ -79,15 +82,29 @@ const SectionHero = props => {
   //   {name: 'StepTwo', component: <StepTwo/>}
   // ];
 
-  const handleSubmit = data => {
-    console.log(data);
-    // const history = useHistory();
-    //
-    // function handleClick() {
-    //   history.push("/home");
-    // }
-
-  };
+  // const handleSubmit = data => {
+  //   console.log(data);
+  //   // const history = useHistory();
+  //   //   history.push();
+  //   //
+  //   //
+  //   return  <NamedLink
+  //     name="SearchPage"
+  //     to={{
+  //       search:
+  //         'address=Finland&bounds=70.0922932%2C31.5870999%2C59.693623%2C20.456500199999937',
+  //     }}
+  //     className={css.heroButton}>
+  //     <FormattedMessage id="SectionHero.browseButton" />
+  //   </NamedLink>
+  //   // const history = useHistory();
+  //   //
+  //   {/*<Link to="/insert/your/path/here" className="btn btn-primary">hello</Link>*/}
+  //   {/*function handleClick() {*/}
+  //   {/*  history.push("/s?bounds=85.051129%2C147.46424136%2C-85.051129%2C-147.46424136&mapSearch=true");*/}
+  //   {/*}*/}
+  //
+  // };
 
   // const options = ['Arts & Entertainment', 'Industry', 'Innovation & Tech', 'Life'];
   return (
@@ -156,6 +173,7 @@ const SectionHero = props => {
           {/*      <RadioOption className={css.test} value="Left Side" />*/}
           {/*      <RadioOption value="Front of Teeth" />*/}
           {/*      <RadioOption value="Right Side" />*/}
+
           {/*    </RadioControl>*/}
           {/*    <RadioControl height={200}*/}
           {/*      name="intensity"*/}
